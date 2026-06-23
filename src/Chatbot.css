@@ -1,0 +1,114 @@
+.chatbot-toggle {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+    z-index: 1000;
+}
+
+.chatbot-box {
+    position: fixed;
+    right: 24px;
+    bottom: 95px;
+    width: 360px;
+    height: 460px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.25);
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-header {
+    background: #2563eb;
+    color: white;
+    padding: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background: #f8fafc;
+}
+
+.chatbot-message {
+    max-width: 80%;
+    padding: 10px 13px;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.chatbot-message.bot {
+    background: #e2e8f0;
+    color: #0f172a;
+    align-self: flex-start;
+}
+
+.chatbot-message.user {
+    background: #2563eb;
+    color: white;
+    margin-left: auto;
+}
+
+.chatbot-input {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    border-top: 1px solid #e5e7eb;
+    background: white;
+}
+
+.chatbot-input input {
+    flex: 1;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    background: white;
+    color: #0f172a;
+}
+.chatbot-input input::placeholder {
+    color: #94a3b8;
+}
+
+.chatbot-input button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .chatbot-box {
+        right: 12px;
+        left: 12px;
+        width: auto;
+    }
+}
