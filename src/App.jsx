@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Chatbot from "./Chatbot";
+import AIInsights from "./components/AIInsights.jsx";
 import {
     getMetrics,
     getRules,
@@ -434,7 +435,7 @@ function App() {
                     <p className="subtitle">
                         Real-time supervision of metrics, anomalies and alerts
                     </p>
-
+                    <AIInsights />
                     <div className="cards">
                         <div className="card">
                             <h2>{metrics.length}</h2>
